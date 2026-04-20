@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>أدخل معلوماتك</h2>
+
+<form id="orderForm">
+  <input type="text" id="name" placeholder="الاسم" required><br><br>
+  <input type="text" id="phone" placeholder="الهاتف" required><br><br>
+  <input type="hidden" id="product">
+  <input type="hidden" id="company">
+  <button type="submit">إرسال الطلب</button>
+</form>
+
+<script>
+document.getElementById("product").value = localStorage.getItem("product");
+document.getElementById("company").value = localStorage.getItem("company");
+
+document.getElementById("orderForm").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  fetch("PUT_YOUR_WEB_APP_URL_HERE", {
+    method: "POST",
+    body: JSON.stringify({
+      name: name.value,
+      phone: phone.value,
+      product: product.value,
+      company: company.value
+    })
+  }).then(()=> alert("تم إرسال طلبك بنجاح"));
+});
+</script>
+
+</body>
+</html>
