@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150">
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#003366;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffcc00;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(10, 10)">
+    <path d="M 10 50 Q 50 10 90 50 Q 130 90 170 50" stroke="url(#gradient1)" stroke-width="12" fill="none" stroke-linecap="round"/>
+    <path d="M 160 30 L 180 50 L 160 70" fill="none" stroke="url(#gradient1)" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="20" cy="50" r="10" fill="#003366"/>
+  </g>
+
+  <text x="210" y="80" font-family="Arial, sans-serif" font-weight="bold" font-size="56" fill="#003366">
+    <tspan dx="0">Bilal</tspan>
+    <tspan dx="10" font-size="44" fill="#666666">Delivery</tspan>
+  </text>
+  
+  <text x="210" y="125" font-family="'Segoe UI', Tahoma, Geneva, Verdana, sans-serif" font-size="36" fill="#003366">
+    <tspan dx="0">بلال للتوصيل</tspan>
+  </text>
+
+  <text x="210" y="145" font-family="'Segoe UI', Tahoma, Geneva, Verdana, sans-serif" font-size="20" fill="#666666">
+    <tspan dx="0">سرعة، ثقة، توصيل</tspan>
+  </text>
+</svg>
